@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tw.idv.hunter</groupId>
+  <artifactId>mavenAggregation</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>mavenAggregation-Web</module>
+  	<module>mavenAggregation-Controller</module>
+  	<module>mavenAggregation-Utility</module>
+  </modules>
+
+  <properties>
+	<javax.servlet.version>3.1.0</javax.servlet.version>
+  </properties>
+   <dependencies>
+   	<!-- .. Servlet and JSP start-->
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>${javax.servlet.version}</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jsp-api</artifactId>
+		<version>2.0</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+	<!-- .. Servlet and JSP end -->
+   
+   </dependencies>
+<!-- 
+  <dependencyManagement>
+  </dependencyManagement>
+ -->
+</project>
